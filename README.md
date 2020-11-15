@@ -135,4 +135,4 @@ $ ssh -T git@github.com
 
 Cuando nos pregunte que si queremos aceptar la fingerprint del servidor escribiremos `yes`.
 
-Y con esto hemos terminado con la instalacion y configuración de git en GitHub.
+Y con esto hemos terminado con la instalacion de git y su configuración en GitHub.
