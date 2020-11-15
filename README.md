@@ -67,7 +67,7 @@ Para crear la clave utilizaremos el comando `ssh-keygen`, cabe decir que la clav
 $ cd ~
 $ mkdir .ssh
 $ cd .ssh
-$ ssh-keygen -t rsa -C "<tu_email@example.com>"
+$ ssh-keygen -t rsa -b 4096 -C "<tu_email@example.com>"
 > Enter file in which to save the key (/home/fireshafter/.ssh/id_rsa): 
 > Enter passphrase (empty for no passphrase): 
 > Enter same passphrase again: 
