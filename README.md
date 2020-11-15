@@ -89,7 +89,14 @@ $ ssh-keygen -t rsa -b 4096 -C "<tu_email@example.com>"
 > +----[SHA256]-----+
 ~~~
 
-Al ejecutar el comando nos mostrara varios _`prompts`_ preguntando donde queremos guardar las claves y si queremos usar un _`passphrase`_ en nuestro caso no vamos a necesitar hacer nada de eso, por lo que los dejaremos vacíos y presionaremos enter para omitirlos.
+Al ejecutar el comando nos mostrara varios _`prompts`_ preguntando donde queremos guardar las claves y si queremos usar un _`passphrase`_ en nuestro caso vamos a omitir la primera dandole al enter ya que estamos en la carpeta correspondiente, y cuando nos pregunte por el passphrase escribiremos una contraseña que podamos recordar, ya que nos la pedirá al añadirla.
+
+Ahora vamos a añadir nuestra clave ssh privada a nuestro llavero y ha cambiar una directiva de git para que guarde nuestras credenciales, esto no es necesario en todos los casos pero lo voy a dejar aquí por compatibilidad.
+
+~~~
+$ ssh-add id_rsa
+$ git config --global credential.helper store
+~~~
 
 #### Subir nuestra clave pública a GitHub
 
